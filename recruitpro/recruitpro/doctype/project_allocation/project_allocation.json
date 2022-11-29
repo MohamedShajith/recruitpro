@@ -1,0 +1,68 @@
+{
+ "creation": "2020-04-24 15:04:13.960417",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "territory",
+  "project_status",
+  "tvac",
+  "sp",
+  "plan"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project_name.territory",
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Territory"
+  },
+  {
+   "fetch_from": "project_name.status",
+   "fieldname": "project_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Status"
+  },
+  {
+   "fetch_from": "project_name.tvac",
+   "fieldname": "tvac",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#T_VAC"
+  },
+  {
+   "fetch_from": "project_name.tsp",
+   "fieldname": "sp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#T_SP"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#Plan"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-24 15:25:37.743777",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Project Allocation",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
