@@ -1,7 +1,7 @@
 import frappe
 import json
 # import shortuuid
-import qrcode
+# import qrcode
 import base64
 from PIL import Image
 from io import BytesIO
@@ -30,35 +30,35 @@ def create_mobilization(doc, method):
             mobilization = frappe.new_doc("Mobilization")
         mobilization.update({
             "customer": doc.customer,
-            "territory": territory,
+            # "territory": territory,
             "project": doc.project,
             "payment_terms": payment_terms,
             "position": doc.position,
             "candidate": doc.name,
             "name1": doc.given_name,
-            "designation": task,
-            "contact_no": doc.mobile,
+            # "designation": task,
+            # "contact_no": doc.mobile,
             "current_location": doc.current_location,
             "passport_no": doc.passport_no,
             "ecr_status": doc.ecr_status,
-            "associate_name": doc.associate_name,
-            "associate": doc.associate,
-            "associate_contact_no": doc.contact_no,
+            # "associate_name": doc.associate_name,
+            # "associate": doc.associate,
+            # "associate_contact_no": doc.contact_no,
             "expiry_date": doc.expiry_date,
             "date_of_issue": doc.issued_date,
             "place_of_issue": doc.place_of_issue,
-            "cr_executive": project.cpc,
-            "ca_executive": ca_executive,
-            "department": department,
-            "source_executive": source_executive,
-            "selection_date": doc.interview_date,
-            "tl": tl,
-            "degree": doc.degree,
-            "specialization": doc.specialization,
-            "yop": doc.yop,
-            "basic": doc.basic,
-            "food": doc.food,
-            "other_allowances": doc.other_allowances,
+            # "cr_executive": project.cpc,
+            # "ca_executive": ca_executive,
+            # "department": department,
+            # "source_executive": source_executive,
+            # "selection_date": doc.interview_date,
+            # "tl": tl,
+            # # "degree": doc.degree,
+            # "specialization": doc.specialization,
+            # "yop": doc.yop,
+            # "basic": doc.basic,
+            # "food": doc.food,
+            # "other_allowances": doc.other_allowances,
             "dob": doc.dob
         })
         

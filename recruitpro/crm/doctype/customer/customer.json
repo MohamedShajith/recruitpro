@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "naming_series:",
  "creation": "2020-04-07 18:31:45.205321",
  "doctype": "DocType",
@@ -126,6 +127,7 @@
   },
   {
    "bold": 1,
+   "fetch_from": "from_lead.lead_name",
    "fieldname": "full_name",
    "fieldtype": "Data",
    "in_global_search": 1,
@@ -213,6 +215,7 @@
    "options": "\nSales\nProject\nRenewal"
   },
   {
+   "fetch_from": "from_lead.lead_owner",
    "fieldname": "account_manager",
    "fieldtype": "Link",
    "label": "Account Manager",
@@ -228,12 +231,13 @@
   },
   {
    "fieldname": "customer_class",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "hidden": 1,
    "label": "Customer Class",
    "options": "Key\nName\nRetail\nDormant\nNamed"
   },
   {
+   "fetch_from": "from_lead.territory",
    "fieldname": "territory",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -264,12 +268,14 @@
    "label": "Follow Up"
   },
   {
+   "fetch_from": "from_lead.next_contact_by",
    "fieldname": "next_contact_by",
    "fieldtype": "Link",
    "label": "Next Contact by",
    "options": "User"
   },
   {
+   "fetch_from": "from_lead.last_contacted_by",
    "fieldname": "last_contacted_by",
    "fieldtype": "Link",
    "label": "Last Contacted By",
@@ -280,11 +286,13 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "from_lead.next_contact_date",
    "fieldname": "next_contact_date",
    "fieldtype": "Data",
    "label": "Next Contact Date"
   },
   {
+   "fetch_from": "from_lead.last_contacted_date",
    "fieldname": "last_contacted_date",
    "fieldtype": "Data",
    "label": "Last Contacted Date"
@@ -633,11 +641,13 @@
   }
  ],
  "image_field": "image",
- "modified": "2020-04-27 10:26:26.144520",
+ "links": [],
+ "modified": "2022-11-29 20:47:58.538416",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Customer",
  "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -653,10 +663,10 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "search_fields": "full_name,customer_group,territory, mobile_no,primary_address",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "title_field": "full_name",
  "track_changes": 1
 }

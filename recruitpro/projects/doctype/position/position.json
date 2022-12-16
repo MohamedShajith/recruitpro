@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "allow_rename": 1,
  "autoname": "P.####",
  "creation": "2020-04-08 10:28:21.780956",
@@ -476,11 +477,13 @@
    "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-04-28 19:55:18.095452",
+ "links": [],
+ "modified": "2022-11-29 21:31:02.489058",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Position",
  "name_case": "Title Case",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -500,6 +503,7 @@
  "search_fields": "subject",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "timeline_field": "project",
  "title_field": "subject",
  "track_changes": 1

@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "autoname": "field:college_name",
+ "creation": "2022-12-06 11:05:50.963046",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "college_name",
+  "category",
+  "type",
+  "university_board",
+  "location",
+  "column_break_6",
+  "land_line",
+  "website",
+  "common_mail_id",
+  "yoe",
+  "section_break_11",
+  "contact_table",
+  "section_break_13",
+  "course_table",
+  "section_break_15",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "college_name",
+   "fieldtype": "Data",
+   "label": "College Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nPrivate\nGovernment\nUniversity\nDeemed University"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nEngineering\nArts & Science\nPolytechnic\nITI\nVocational Institutes\nSkill Center\nSchool\nPharma\nMedical\nManagement"
+  },
+  {
+   "fieldname": "university_board",
+   "fieldtype": "Data",
+   "label": "University / Board"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "land_line",
+   "fieldtype": "Data",
+   "label": "Land Line"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "common_mail_id",
+   "fieldtype": "Data",
+   "label": "Common Mail ID"
+  },
+  {
+   "fieldname": "yoe",
+   "fieldtype": "Data",
+   "label": "YOE"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact_table",
+   "fieldtype": "Table",
+   "label": "Contact Table",
+   "options": "Recruitment Contact"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "course_table",
+   "fieldtype": "Table",
+   "label": "Course Table",
+   "options": "Recruitment Course"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-06 11:05:50.963046",
+ "modified_by": "Administrator",
+ "module": "recruitpro",
+ "name": "Institutes",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

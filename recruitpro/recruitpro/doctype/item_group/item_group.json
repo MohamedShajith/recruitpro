@@ -1,4 +1,6 @@
 {
+ "actions": [],
+ "autoname": "field:item_group_name",
  "creation": "2020-04-11 12:07:46.042983",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -31,7 +33,8 @@
   {
    "fieldname": "item_group_name",
    "fieldtype": "Data",
-   "label": "Item Group Name"
+   "label": "Item Group Name",
+   "unique": 1
   },
   {
    "fieldname": "parent_item_group",
@@ -115,10 +118,12 @@
    "options": "Item Website Specification"
   }
  ],
- "modified": "2020-04-11 12:08:03.238501",
+ "links": [],
+ "modified": "2022-12-10 13:03:55.075951",
  "modified_by": "Administrator",
- "module": "RecruitPRO",
+ "module": "recruitpro",
  "name": "Item Group",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -137,5 +142,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

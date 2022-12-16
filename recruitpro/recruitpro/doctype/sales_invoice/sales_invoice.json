@@ -1,5 +1,6 @@
 {
- "autoname": "naming_series:",
+ "actions": [],
+ "autoname": "SI-.####",
  "creation": "2020-04-13 12:14:41.429516",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -173,6 +174,7 @@
   "commission_rate",
   "total_commission",
   "sales_team_section",
+  "sales_order",
   "sales_team1",
   "subscription_section_section",
   "from_date",
@@ -199,6 +201,8 @@
    "label": "Series"
   },
   {
+   "fetch_from": "sales_order.customer",
+   "fetch_if_empty": 1,
    "fieldname": "customer",
    "fieldtype": "Link",
    "label": "Customer",
@@ -1126,12 +1130,20 @@
    "fieldname": "total_qty",
    "fieldtype": "Float",
    "label": "Total Qty"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
   }
  ],
- "modified": "2020-04-13 19:26:15.832463",
+ "links": [],
+ "modified": "2022-12-10 18:11:41.374805",
  "modified_by": "Administrator",
- "module": "RecruitPRO",
+ "module": "recruitpro",
  "name": "Sales Invoice",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -1150,5 +1162,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

@@ -1,4 +1,6 @@
 {
+ "actions": [],
+ "autoname": "field:warehouse_name",
  "creation": "2020-04-09 10:04:21.971118",
  "description": "A logical Warehouse against which stock entries are made.",
  "doctype": "DocType",
@@ -36,7 +38,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Warehouse Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "warehouse_detail_section",
@@ -160,10 +163,12 @@
    "options": "Warehouse"
   }
  ],
- "modified": "2020-04-10 15:34:34.548696",
+ "links": [],
+ "modified": "2022-12-10 13:00:11.520550",
  "modified_by": "Administrator",
- "module": "RecruitPRO",
+ "module": "recruitpro",
  "name": "Warehouse",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -182,5 +187,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

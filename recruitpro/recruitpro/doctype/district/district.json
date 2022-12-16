@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "field:district",
  "creation": "2020-04-08 11:34:08.145563",
  "doctype": "DocType",
@@ -29,10 +30,12 @@
    "options": "Country"
   }
  ],
- "modified": "2020-04-08 11:34:08.145563",
+ "links": [],
+ "modified": "2022-12-06 11:03:49.970110",
  "modified_by": "Administrator",
- "module": "RecruitPRO",
+ "module": "recruitpro",
  "name": "District",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -51,5 +54,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

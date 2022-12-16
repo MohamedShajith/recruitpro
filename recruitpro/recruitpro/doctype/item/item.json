@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "field:item_code",
  "creation": "2020-04-09 10:08:59.748366",
  "description": "A Product or a Service that is bought, sold or kept in stock.",
@@ -13,7 +14,9 @@
   "item_group",
   "is_item_from_hub",
   "default_unit_of_measure",
+  "candidate_owner",
   "column_break_8",
+  "sa_id",
   "disabled",
   "allow_alternative_item",
   "maintain_stock",
@@ -808,13 +811,27 @@
    "fieldname": "synced_with_hub",
    "fieldtype": "Data",
    "label": "Synced With Hub"
+  },
+  {
+   "fieldname": "candidate_owner",
+   "fieldtype": "Link",
+   "label": "Candidate Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "sa_id",
+   "fieldtype": "Link",
+   "label": "SA ID ",
+   "options": "SAMS"
   }
  ],
  "image_field": "image",
- "modified": "2020-04-11 19:13:14.980889",
+ "links": [],
+ "modified": "2022-12-10 15:35:45.969844",
  "modified_by": "Administrator",
- "module": "RecruitPRO",
+ "module": "recruitpro",
  "name": "Item",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -833,5 +850,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

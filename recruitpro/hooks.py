@@ -92,11 +92,11 @@ app_license = "MIT"
 # }
 doc_events = {
     "Candidate": {
-        "on_update": "recruitpro.api.create_mobilization"
+        "on_update": "recruitpro.recruitpro.doctype.candidate.candidate.create_mobilization"
     },
-    "Position Candidate": {
-        "on_update": "recruitpro.api.create_mobilization"
-    },
+    # "Position Candidate": {
+    #     "on_update": "recruitpro.api.create_mobilization"
+    # },
     # "Project": {
     #    "on_update": "recruitment.utils.apply_perm"
     # }

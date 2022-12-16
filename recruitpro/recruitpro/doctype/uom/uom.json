@@ -1,4 +1,6 @@
 {
+ "actions": [],
+ "autoname": "field:uom_name",
  "creation": "2020-04-11 15:02:11.774152",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,7 +15,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "UOM Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "default": "0",
@@ -22,10 +25,12 @@
    "label": "Must be Whole Number"
   }
  ],
- "modified": "2020-04-11 15:02:11.774152",
+ "links": [],
+ "modified": "2022-12-10 15:30:19.158961",
  "modified_by": "Administrator",
- "module": "RecruitPRO",
+ "module": "recruitpro",
  "name": "UOM",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -44,5 +49,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }
